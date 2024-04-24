@@ -1,0 +1,54 @@
+.Home {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  width: 64%;
+  margin: 7rem 0rem;
+}
+.Home img {
+  width: 400px;
+  border-radius: 100%;
+}
+.text {
+  color: white;
+  font-size: 47px;
+}
+
+@keyframes gradient {
+  0% {
+    color: #3c00ff;
+  } /* Red */
+  25% {
+    color: #0080ff;
+  } /* Orange */
+  50% {
+    color: #dd00ff;
+  } /* Yellow */
+  75% {
+    color: #1ee1f3;
+  } /* Green */
+  100% {
+    color: #0000ff;
+  } /* Blue */
+}
+
+.Text-animated {
+  animation: gradient 5s ease infinite alternate;
+  color: white;
+  margin-top: 0px;
+  font-size: 60px;
+}
+@media screen and (max-width: 960px) {
+  .Home {
+    flex-direction: column-reverse;
+    width: 100%;
+    margin: 5rem;
+  }
+  .text {
+    font-size: 25px;
+  }
+  .Text-animated{
+    font-size: 27px;
+  }
+}

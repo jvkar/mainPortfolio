@@ -1,0 +1,44 @@
+.Project-section{
+    display: flex;
+    flex-direction: column ;
+    color: white;
+    width: 64%;
+    margin: 5rem 0rem;
+}
+.Project-section h1{
+    font-size: 47px;
+}
+.Card{
+    display: flex;
+    width: auto;
+    margin: 15px;
+}
+.Card img { 
+    width: 400px;
+    margin-right: 25px;
+}
+.Card h1{
+    margin: 0;
+    font-size: 37px;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 960px) {
+    .Project-section{
+        flex-direction: column;
+    }
+    .Card{
+        flex-direction: column;
+    }
+    .Card img{
+        width: 250px;
+        margin-right: 0;
+    }
+    .Card h1{
+        font-size: 27px;
+    }
+    .Project-section h1{
+        font-size: 25px;
+    }
+}

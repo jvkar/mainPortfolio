@@ -1,0 +1,36 @@
+.Skills{
+    display: flex;
+    flex-direction: column ;
+    color: white;
+    width: 64%;
+    margin: 5rem 0rem;
+}
+.Skills h1{
+    font-size: 47px;
+}
+.Skills-icons{
+    text-align: center;
+}
+.Skills-icons img {
+     margin: 5px;
+}
+@keyframes shake {
+    0% { transform: translateY(5px); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(5px); }
+  }
+.Skills-icons img:hover{
+    animation: shake 0.9s ease-in-out infinite;
+
+}
+@media screen and (max-width: 960px) {
+.Skills h1{
+    font-size: 25px;
+}
+.Skills-icons img {
+    width: 64px;
+}
+
+}
